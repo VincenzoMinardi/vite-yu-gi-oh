@@ -29,7 +29,11 @@ export default {
 
 
 <template>
-  <h1>Yu-Gi-Oh Api</h1>
+  <div class="title-and-img">
+    <img src="./assets/img/Yu-Gi-Oh!_(Logo).jpg" alt="">
+    <h1>Yu-Gi-Oh Api</h1>
+  </div>
+  
   <CardHeader />
   <CardMain />
   <CharacterList />
@@ -44,8 +48,22 @@ export default {
   box-sizing: border-box;
 }
 
-h1 {
-  color: green;
-  font-size: 3rem;
+.title-and-img{
+height: 40px;
+display: flex;
+
+  h1 {
+ margin-left:2rem;
+ font-size: 2.5rem;
 }
+
+img{
+  height: 50px;
+}
+
+}
+
+
+
+
 </style>
