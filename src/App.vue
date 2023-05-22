@@ -3,7 +3,7 @@ import CardHeader from './components/CardHeader.vue';
 import CardMain from './components/CardMain.vue';
 import CharacterList from './components/CharacterList.vue';
 import axios from 'axios';
-import store from './store';
+import {store}  from './store'
 
 
 export default {
@@ -29,6 +29,7 @@ export default {
 
 
 <template>
+  <h1>Yu-Gi-Oh Api</h1>
   <CardHeader />
   <CardMain />
   <CharacterList />
