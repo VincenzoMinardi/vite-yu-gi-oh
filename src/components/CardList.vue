@@ -19,9 +19,11 @@ export default {
 		<h2>Found 20 Cards</h2>
 	</div>
 
-    <select class="button" name="" id="" placeholder="Seleziona">
-        <option value="">Seleziona qui</option>
+    <select v-model="Selection" class="button-card" name="" id="" placeholder="Seleziona">
+        <option class="option-card" value="">Seleziona qui</option>
     </select>
+	<button class="bt">Search</button>
+	<button class="bt">Reset</button>
 
 	<div class="color">
 		<div class="cards-container">
@@ -54,6 +56,18 @@ export default {
 	flex: 0 0 25%;
 }
 	
+}
+
+.button-card{
+	height: 40px;
+	width: 150px;
+margin: 3rem;
+}
+
+.bt{
+	height: 30px;
+	width: 150px;
+	margin-left: 1rem;
 }
 
 
