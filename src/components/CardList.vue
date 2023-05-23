@@ -19,7 +19,7 @@ export default {
 		<h2>Found 20 Cards</h2>
 	</div>
 
-    <select v-model="store.arrSelect" class="button-card" placeholder="Seleziona">
+    <select :keyup="enter" v-model="store.valueSelect" class="button-card" placeholder="Seleziona">
         <option v-for="option in store.arrSelect" class="option-card">{{option.archetype_name}}</option>
     </select>
 	<button class="bt">Search</button>
