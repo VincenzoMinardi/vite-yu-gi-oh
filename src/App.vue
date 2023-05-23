@@ -15,11 +15,16 @@ export default {
     CardList,
   	},
 	methods: {
-		valueSelect(){
-		return this.store.arrSelect.archetypes_name((option) =>{
-			this.store.archetypes_name.value === option
-		})
-	},
+	// 	valueSelect(){
+	// 	return this.store.arrSelect.archetypes_name((option) =>{
+	// 		this.store.archetypes_name.value === 'option' || 
+	// 		option.characterList
+			
+	// 		console.log(valueSelect)
+	// 	})
+		
+	// },
+	
 },
 
 	created() {

@@ -11,6 +11,11 @@ export default {
 	components: {
 		CardApp,
 	},
+	methods: {
+		emitSearchEvent(){
+			console.log()
+		}
+	},
 };
 </script>
 
@@ -19,8 +24,8 @@ export default {
 		<h2>Found 20 Cards</h2>
 	</div>
 
-    <select :keyup="enter" v-model="store.valueSelect" class="button-card" placeholder="Seleziona">
-        <option v-for="option in store.arrSelect" class="option-card">{{option.archetype_name}}</option>
+    <select  @change="emitSearchEvent" v-model="store.valueSelect" class="button-card" placeholder="Seleziona">
+        <option @keyup="enter" v-for="option in store.arrSelect" :value="option" :key="option.id" class="option-card">{{option.archetype_name}}</option>
     </select>
 	<button class="bt">Search</button>
 	<button class="bt">Reset</button>
