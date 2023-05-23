@@ -19,12 +19,11 @@ export default {
 		<h2>Found 20 Cards</h2>
 	</div>
 
-    <select v-model="Selection" class="button-card" name="" id="" placeholder="Seleziona">
-        <option class="option-card" value="">Seleziona qui</option>
+    <select v-model="store.arrSelect" class="button-card" placeholder="Seleziona">
+        <option v-for="option in store.arrSelect" class="option-card">{{option.archetype_name}}</option>
     </select>
 	<button class="bt">Search</button>
 	<button class="bt">Reset</button>
-
 	<div class="color">
 		<div class="cards-container">
 			<CardApp

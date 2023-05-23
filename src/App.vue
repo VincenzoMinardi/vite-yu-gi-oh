@@ -22,7 +22,7 @@ export default {
 
 			axios
 			.get('https://db.ygoprodeck.com/api/v7/archetypes.php')
-			.then(response => (this.store.CardList) = response.data.data)
+			.then(response => (this.store.arrSelect) = response.data);
 	},
 
 	
