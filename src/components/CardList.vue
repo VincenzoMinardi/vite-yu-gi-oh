@@ -11,11 +11,9 @@ export default {
 	components: {
 		CardApp,
 	},
-	methods: {
-		emitSearchEvent(){
-			console.log()
-		}
-	},
+
+	
+	
 };
 </script>
 

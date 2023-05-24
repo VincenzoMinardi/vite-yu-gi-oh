@@ -14,30 +14,21 @@ export default {
     CardHeader,
     CardList,
   	},
-	methods: {
-	// 	valueSelect(){
-	// 	return this.store.arrSelect.archetypes_name((option) =>{
-	// 		this.store.archetypes_name.value === 'option' || 
-	// 		option.characterList
-			
-	// 		console.log(valueSelect)
-	// 	})
-		
-	// },
 	
-},
 
 	created() {
 		// qui fare la richiesta all'api
 		axios
 			.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
 			.then(response => (this.store.cardList = response.data.data));
+		}
 
-			axios
-			.get('https://db.ygoprodeck.com/api/v7/archetypes.php')
-			.then(response => (this.store.arrSelect) = response.data);
-	},
-}
+			
+	};
+
+			
+	
+
 </script>
 
 <template>
